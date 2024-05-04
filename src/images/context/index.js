@@ -21,7 +21,7 @@ export const StateContextProvider = ({ children }) => {
           shortColumnNames: '0'
         },
         headers: {
-          'X-RapidAPI-Key': '7a48bfdc9amsh07dec427e3f4459p1e0d0bjsn2f38ef239bfc',
+          'X-RapidAPI-Key': '1c0fea893dmsh518adb3ca027c29p13a8c2jsnb4aae0e8e7ec',
           'X-RapidAPI-Host': 'visual-crossing-weather.p.rapidapi.com'
         }
       };
@@ -40,7 +40,7 @@ export const StateContextProvider = ({ children }) => {
 
   useEffect(() => {
     fetchWeather()
-  }, );
+  },);
 
   useEffect(() => {
     console.log(value);
