@@ -8,6 +8,7 @@ export const StateContextProvider = ({ children }) => {
   const [value, setValue] = useState([]);
   const [place, setPlace] = useState("Jaipur");
   const [location, setLocation] = useState("");
+
   const fetchWeather = async () => {
     const options = {
         method: 'GET',
@@ -40,11 +41,7 @@ export const StateContextProvider = ({ children }) => {
   useEffect(() => {
     fetchWeather();
   }, [place]);
-
-  useEffect(() => {
-    console.log(value);
-  }, [value]);
-
+  
   return (
     <StateContext.Provider
       value={{
